@@ -108,4 +108,42 @@ a {
 .btn:hover .sparkle {
   fill: white;
   transform: scale(1.2);
+}.birthday-message{
+  max-width:700px;
+  margin:auto;
+  text-align:center;
+  color:white;
+  font-family: "Poppins", sans-serif;
+  line-height:1.8;
+}
+
+.birthday-message h1{
+  font-size:40px;
+  margin-bottom:20px;
+}
+
+.birthday-message p{
+  opacity:0;
+  animation:fadeIn 2s forwards;
+}
+
+.birthday-message p:nth-child(2){animation-delay:2s;}
+.birthday-message p:nth-child(3){animation-delay:4s;}
+.birthday-message p:nth-child(4){animation-delay:6s;}
+.birthday-message p:nth-child(5){animation-delay:8s;}
+.birthday-message p:nth-child(6){animation-delay:10s;}
+.birthday-message p:nth-child(7){animation-delay:12s;}
+.birthday-message p:nth-child(8){animation-delay:14s;}
+.birthday-message p:nth-child(9){animation-delay:16s;}
+.birthday-message p:nth-child(10){animation-delay:18s;}
+
+.last{
+  font-size:20px;
+  color:#ffd1dc;
+}
+
+@keyframes fadeIn{
+  to{
+    opacity:1;
+  }
 }
